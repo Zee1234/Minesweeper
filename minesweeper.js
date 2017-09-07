@@ -50,8 +50,8 @@ class Minesweeper
     // Generate bombs at random locations
     let count = 0
     while (count < this.bombs) {
-      let x = random(this.height)
-      let y = random(this.width)
+      let x = random(this.width)
+      let y = random(this.height)
       if (!this.matrix(x, y)) {
         this.setMatrix(x, y, new BombCell(x, y, this))
         count++
